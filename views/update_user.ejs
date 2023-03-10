@@ -13,7 +13,7 @@
         </div>
         <div class="form-title text-center">
             <h2 class="text-dark">Update User</h2>
-            <span class="text-light">Use the below form to Update an account</span>
+            <span class="">Use the below form to Update an account</span>
         </div>
 
         <!-- add user form -->
@@ -21,16 +21,16 @@
  <form method="POST" id="update_user">
     <div class="new_user">
         <div class="form-group">
-            <label for="name" class="text-light">Name</label>
+            <label for="name" class="">Name</label>
             <input type="hidden" name="id" value="<%= user._id %>">
             <input type="text" name="name" value="<%= user.name %>" placeholder="Mark Stoenis">
         </div>
         <div class="form-group">
-            <label for="Email" class="text-light">Email</label>
+            <label for="Email" class="">Email</label>
             <input type="text" name="email" value="<%= user.email%>" placeholder="example@gmail.com">
         </div>
         <div class="form-group">
-            <label for="gender" class="text-light">Gender</label>
+            <label for="gender" class="">Gender</label>
             <div class="radio inline">
                 <input type="radio" id="radio-2" name="gender" value="Male" <%= user.gender == 'Male' ? 'checked' : '' %>>
                 <label for="radio-2" class="radio-label">Male</label>
@@ -42,7 +42,7 @@
         </div>
 
         <div class="form-group">
-            <label for="gender" class="text-light">Status</label>
+            <label for="gender" class="">Status</label>
             <div class="radio inline">
                 <input type="radio" id="radio-4" name="status" value="Active" <%= user.status == 'Active' ? 'checked' : '' %> >
                 <label for="radio-4" class="radio-label">Active</label>
@@ -55,10 +55,10 @@
 
         <div class="form-group">
 
-            <label for="visa" class="text-light">Visa</label>
+            <label for="visa" class="">Visa</label>
             <input type="number" name="visa" value="<%= user.visa %>" placeholder="0-100">
 
-            <label for="final" class="text-light">Final</label>
+            <label for="final" class="">Final</label>
             <input type="number" name="final" value="<%= user.final %>" placeholder="0-100">
         </div>
 
